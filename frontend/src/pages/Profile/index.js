@@ -50,7 +50,7 @@ export default function Profile() {
     <div className="profile-container">
       <header>
         <img src={logoImg} alt="Be The Hero"/>
-        <span>Bem Vindo {ongName}</span>
+        <span>Olá {ongName}</span>
 
         <Link className="button" to="/incidents/new">Cadastrar novo caso</Link>
         <button onClick={handlelogout} type="button">
@@ -58,7 +58,7 @@ export default function Profile() {
         </button>
       </header>
 
-      <h1>Caos Cadastrados</h1>
+      <h1>Casos Cadastrados</h1>
 
       <ul>
         {incidents.map(incident => (
